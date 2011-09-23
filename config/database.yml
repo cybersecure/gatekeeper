@@ -1,0 +1,29 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: gatekeeper_development
+  pool: 5
+  username: root
+  password: 2011Tul!p
+  socket: /var/run/mysqld/mysqld.sock
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: gatekeeper_test
+  pool: 5
+  username: root
+  password: 2011Tul!p
+  socket: /var/run/mysqld/mysqld.sock
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: gatekeeper_production
+  pool: 5
+  username: root
+  password: 2011Tul!p
+  socket: /var/run/mysqld/mysqld.sock
