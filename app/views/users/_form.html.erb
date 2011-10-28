@@ -1,0 +1,38 @@
+<%= form_for @user, :class => 'form login' do |f| %>
+  <div class="group wat-cf">
+    <div class="left">
+      <label class="label right">Username</label>
+    </div>
+    <div class="right">
+      <%= f.text_field :username, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="group wat-cf">
+    <div class="left">
+      <label class="label right">Email</label>
+    </div>
+    <div class="right">
+      <%= f.text_field :email, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="group wat-cf">
+    <div class="left">
+      <label class="label right">Password</label>
+    </div>
+    <div class="right">
+      <%= f.password_field :password, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="left wat-cf">
+      <label class="label right">Confirm Password</label>
+    </div>
+    <div class="right">
+      <%= f.password_field :password_confirmation, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="group navform">
+    <%= f.submit "Sign Up", :class => 'button' %>
+  </div>
+<% end %>
