@@ -15,7 +15,7 @@ group :test do
   gem 'turn', :require => false
 end
 
-gem 'oauth2-provider', :path => '/home/cybersecure/projects/oauth2-provider'
-gem 'web-app-theme', '~> 0.8.0'
+gem 'oauth2-provider', :git => 'git://github.com/freerange/oauth2-provider.git'
+gem 'zurb-foundation'
 
 gem 'bcrypt-ruby'
