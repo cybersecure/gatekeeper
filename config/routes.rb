@@ -9,5 +9,4 @@ CsTalk::Application.routes.draw do
   
   match "/oauth/authorize", :via => :get, :to => "authorization#new"
   match "/oauth/authorize", :via => :post, :to => "authorization#create"
-
 end
