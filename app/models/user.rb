@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many  :access_grants, :class_name => 'Oauth::AccessGrant'
   has_secure_password
 
   attr_accessible :username, :email, :password, :password_confirmation, :language

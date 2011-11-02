@@ -1,10 +1,14 @@
 class UsersController < ApplicationController
-#  authenticate_with_oauth
-  before_filter :set_current_account_from_oauth, :only => [:show]
-
   def show
-    user = User.find(1)
-    render :json => {:login => user.username}
+    if current_user
+      result = {:username => current_user.username}
+    else
+      result = {:error => "access_denied" }
+    end
+    respond_to do |format|
+      format.json { render :json => result.to_json }
+      format.html { login_required }
+    end
   end
 
   def new
@@ -22,11 +26,5 @@ class UsersController < ApplicationController
     else
       render "new"
     end
-  end
-  
-  private
-
-  def set_current_account_from_oauth
-    @current_user = request.env['oauth2'].resource_owner
   end
 end

@@ -15,7 +15,6 @@ group :test do
   gem 'turn', :require => false
 end
 
-gem 'oauth2-provider', :git => 'git://github.com/freerange/oauth2-provider.git'
 gem 'zurb-foundation'
 
 gem 'bcrypt-ruby'
