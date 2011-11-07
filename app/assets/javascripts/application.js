@@ -6,8 +6,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-<<<<<<< HEAD
-=======
 //= require foundation
->>>>>>> dev
 //= require_tree .

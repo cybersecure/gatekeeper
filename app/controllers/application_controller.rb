@@ -1,7 +1,5 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-<<<<<<< HEAD
-=======
 
   helper_method :current_user, :logged_in?, :redirect_to_target_or_default, :current_user_from_oauth
 
@@ -48,5 +46,4 @@ class ApplicationController < ActionController::Base
   def store_target_location
     session[:return_to] = request.url
   end
->>>>>>> dev
 end
