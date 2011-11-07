@@ -4,4 +4,8 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+<<<<<<< HEAD
 Gatekeeper::Application.load_tasks
+=======
+CsTalk::Application.load_tasks
+>>>>>>> dev

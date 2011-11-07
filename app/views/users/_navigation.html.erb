@@ -1,0 +1,9 @@
+<dl class="nice tabs mobile hide-on-phones">
+  <dd><%= link_to "Home", root_path %></dd>
+  <% if current_user %>
+    <dd><%= link_to "Logout", logout_path %></dd>
+  <% else %> 
+    <dd><%= link_to "Login", login_path %></dd>
+    <dd><%= link_to "Signup", signup_path %></dd>
+  <% end %>
+</dl>

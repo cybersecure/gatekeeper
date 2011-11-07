@@ -5,3 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+OAuth2::Provider.client_class.create! :name => 'Example Client', :oauth_identifier => 'abcdefgh12345678', :oauth_secret => 'secret'

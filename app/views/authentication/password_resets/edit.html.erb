@@ -1,0 +1,14 @@
+<div class="panel">
+  <h2>Password Reset</h2>
+  <%= form_for @user, :url => password_reset_path(params[:id]), :class => 'nice' do |f| %>
+    <p>
+      <%= f.label :password %>
+      <%= f.password_field :password, :class => 'text-input' %>
+    </p>
+    <p>
+      <%= f.label :password_confirmation %><br/>
+      <%= f.password_field :password_confirmation, :class => 'text-input' %>
+    </p>
+    <p class="buttons"><%= f.submit "Update Password", :class => 'small nice radius button' %></p>
+  <% end %>
+</div>
