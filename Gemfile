@@ -15,7 +15,7 @@ group :test do
   gem 'turn', :require => false
 end
 
-gem 'cybertheme', :path => '../cybertheme'
+gem 'cybertheme', :git => 'git://github.com/jaischeema/cybertheme.git'
 gem 'zurb-foundation'
 
 gem 'bcrypt-ruby'
