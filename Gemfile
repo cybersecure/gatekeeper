@@ -15,6 +15,9 @@ group :test do
   gem 'turn', :require => false
 end
 
+gem 'cybertheme', :path => '../cybertheme'
 gem 'zurb-foundation'
 
 gem 'bcrypt-ruby'
+gem "haml"
+gem "haml-rails"

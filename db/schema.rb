@@ -26,8 +26,12 @@ ActiveRecord::Schema.define(:version => 20111101234736) do
 
   create_table "client_applications", :force => true do |t|
     t.string   "name"
-    t.string   "app_id"
-    t.string   "app_secret"
+    t.string   "client_id"
+    t.string   "client_secret"
+    t.string   "image_url"
+    t.string   "description"
+    t.string   "url"
+    t.boolean  "cybersecure_app"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
