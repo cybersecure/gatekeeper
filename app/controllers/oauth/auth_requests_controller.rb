@@ -4,7 +4,7 @@ module Oauth
 
     def new
       AccessGrant.prune!
-      application ||= ClientApplication.find_by_app_id(params[:client_id])
+      application ||= ClientApplication.find_by_client_id(params[:client_id])
       if application.nil?
         raise "Client Application identifier is not valid"
       end
